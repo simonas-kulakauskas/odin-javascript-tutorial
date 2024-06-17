@@ -41,3 +41,35 @@ console.log(lastLetter("Beans"))
 let arrowLastLetter = (string) => string.at(-1);
 console.log(arrowLastLetter("Beans"))
 console.log(arrowLastLetter("Super epic amazing cool working!"))
+
+
+// Traditional Fizz Buzz
+function fizzBuzz() {
+    for (let i = 1; i <= 50; i++) {
+        if (i % 15 === 0) {
+            console.log("fizzbuzz")
+        }
+        else if (i % 3 === 0) {
+            console.log("fizz")
+        }
+        else if (i % 5 === 0) {
+            console.log("buzz")
+        }
+        else {
+            console.log(i)
+        }
+    }
+}
+fizzBuzz();
+
+// Arrow Function Fizz Buzz
+arrowFizzBuzz = () => {
+    for (let i = 1; i <= 50; i++) {
+        if (i % 15 === 0) { console.log("fizzbuzz") }
+        else if (i % 3 === 0) { console.log("fizz") }
+        else if (i % 5 === 0) { console.log("buzz") }
+        else { console.log(i) }
+    }
+}
+arrowFizzBuzz();
+
